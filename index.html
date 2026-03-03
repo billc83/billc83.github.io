@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <span class="name">William Coulombe</span>
+                <span class="job-title">Software Engineer | Game & Systems Development</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="carousel-container">
+            <button class="carousel-btn prev" onclick="changeSlide(-1)">&#10094;</button>
+            <div class="carousel">
+                <div class="carousel-slides">
+                    <div class="slide active">
+                        <img src="JetJot.png" alt="JetJot">
+                        <div class="slide-content">
+                            <h2>JetJot</h2>
+                            <p>A minimalist offline writing tool built in C# and Avalonia, designed for focused, distraction-free drafting.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="EatFruitOrDiePic.png" alt="Eat Fruit or DIE!">
+                        <div class="slide-content">
+                            <h2>Eat Fruit or DIE!</h2>
+                            <p>A single-room survival platformer where you must grab fruit to keep your hunger meter alive while dodging vanishing platforms, spikes, and lasers.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="RewindPizza.png" alt="Rewind Pizza">
+                        <div class="slide-content">
+                            <h2>Rewind Pizza</h2>
+                            <p>A puzzle game where you reverse time to undo mistakes and rebuild pizzas to match customer orders before the clock runs out.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="SHGM.gif" alt="Super Happy Ghost Maze">
+                        <div class="slide-content">
+                            <h2>Super Happy Ghost Maze</h2>
+                            <p>A first-person horror game where you navigate a maze-like facility haunted by animatronic ghosts while activating terminals to escape.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-dots">
+                    <span class="dot active" onclick="goToSlide(0)"></span>
+                    <span class="dot" onclick="goToSlide(1)"></span>
+                    <span class="dot" onclick="goToSlide(2)"></span>
+                    <span class="dot" onclick="goToSlide(3)"></span>
+                </div>
+            </div>
+            <button class="carousel-btn next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm William Coulombe, a software engineer with a passion for game and systems development. I build everything from survival platformers and puzzle games to productivity tools, always looking for the fun angle. When I'm not shipping games under the Starboard Bow Games label, I'm exploring new ideas in C#, Godot, and beyond.</p>
+    </section>
+
+    <section id="portfolio">
+        <h2>My Portfolio</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <h3>JetJot</h3>
+                <p>A minimalist offline writing tool built in C# and Avalonia, designed for focused, distraction-free drafting with multi-document management and export options.</p>
+                <a href="https://starboardbowgames.itch.io/jetjot" target="_blank" class="btn">View Project</a>
+            </div>
+            <div class="portfolio-item">
+                <h3>Eat Fruit or DIE!</h3>
+                <p>A single-room survival platformer where you must grab fruit to keep your hunger meter alive while dodging vanishing platforms, spikes, and lasers.</p>
+                <a href="https://starboardbowgames.itch.io/eatfruitordie" target="_blank" class="btn">View Project</a>
+            </div>
+            <div class="portfolio-item">
+                <h3>Rewind Pizza</h3>
+                <p>A puzzle game where you reverse time to undo mistakes and rebuild pizzas to match customer orders before the clock runs out.</p>
+                <a href="https://starboardbowgames.itch.io/rewindpizza" target="_blank" class="btn">View Project</a>
+            </div>
+            <div class="portfolio-item">
+                <h3>Super Happy Ghost Maze</h3>
+                <p>A first-person horror game where you navigate a maze-like facility haunted by animatronic ghosts. Activate five terminals to restore power and escape.</p>
+                <a href="https://starboardbowgames.itch.io/superhappyghostmaze" target="_blank" class="btn">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Get In Touch</h2>
+        <p>Feel free to reach out!</p>
+        <p>Email: <a href="mailto:starboardbowgames@gmail.com">starboardbowgames@gmail.com</a></p>
+        <div class="social-links">
+            <a href="https://github.com/billc83" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/williamcoulombe" target="_blank">LinkedIn</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 William Coulombe. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
